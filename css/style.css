@@ -1,237 +1,335 @@
-/* Style général du corps de la page */
+/* ====================== */
+/* STYLE GÉNÉRAL DE LA PAGE */
+/* ====================== */
+
 body {
-    font-family: 'Segoe UI', cursive, sans-serif; /* Police principale */
-    color: white; /* Couleur du texte par défaut */
-    background-color: #000; /* Fond noir */
-    margin: 0; /* Suppression des marges par défaut */
-    padding: 0; /* Suppression du padding par défaut */
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style du titre principal h1 */
-h1 {
-    font-size: 32px; /* Taille de la police */
-    text-align: center; /* Centrage du texte */
-    margin-top: 20px; /* Marge haute */
+/* ====================== */
+/* TITRE PRINCIPAL */
+/* ====================== */
+
+.titre-principal {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Style pour la classe "name" dans le titre */
-.name {
-    color: #f39c12; /* Couleur orange vif */
-    text-transform: uppercase; /* Texte en majuscules */
+.nom {
+    color: #f39c12;
+    text-transform: uppercase;
 }
 
-/* Style de l'image de profil */
-.profile-photo {
-    display: block; /* Affichage en bloc */
-    margin: 20px auto; /* Marge verticale et centrage horizontal */
-    border-radius: 50%; /* Forme circulaire */
-    box-shadow: 0 0 20px rgba(243, 156, 18, 0.6); /* Ombre orange autour */
+/* ====================== */
+/* PHOTO DE PROFIL */
+/* ====================== */
+
+.photo-profil {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+    width: 200px;    /* ✅ Taille restaurée comme avant */
+    height: 200px;   /* ✅ Taille restaurée comme avant */
+    object-fit: cover;
 }
 
-/* Style des paragraphes dans la section about */
-p {
-    font-size: 18px; /* Taille de police */
-    text-align: center; /* Centrage du texte */
-    margin: 10px auto; /* Marges verticales et centrage horizontal */
-    max-width: 700px; /* Largeur maximale */
-    line-height: 1.6; /* Hauteur de ligne pour lisibilité */
+/* ====================== */
+/* PARAGRAPHES */
+/* ====================== */
+
+.paragraphe {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 700px;
+    line-height: 1.6;
+    padding: 0 20px; /* ✅ Ajout de padding pour petit écran */
 }
 
-/* Style des liens dans tout le site */
-a {
-    color: inherit; /* Couleur héritée (blanc par défaut) */
-    text-decoration: none; /* Suppression du soulignement */
-    font-size: 18px; /* Taille de police */
+/* ====================== */
+/* LIENS GÉNÉRAUX */
+/* ====================== */
+
+.lien {
+    color: inherit;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-/* Section contact - conteneur principal */
-.contact-icons {
-    display: flex; /* Utilisation du flexbox */
-    flex-direction: column; /* Titre au dessus, icônes en colonne */
-    align-items: center; /* Centrer horizontalement */
-    margin: 30px auto; /* Marges verticales et centrage */
-    padding: 20px; /* Padding interne */
-    max-width: 700px; /* Largeur maximale */
+/* ====================== */
+/* CONTACT */
+/* ====================== */
+
+.icones-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 700px;
 }
 
-/* Titre de la section contact */
-.contact-icons h2 {
-    font-size: 28px; /* Taille du titre */
-    margin-bottom: 30px; /* Espace sous le titre */
-    color: #f39c12; /* Couleur orange */
-    font-weight: 600; /* Texte semi-gras */
-    text-transform: uppercase; /* Majuscules */
-    letter-spacing: 2px; /* Espacement des lettres */
-    width: 100%; /* Prend toute la largeur */
-    text-align: center; /* Centre le texte */
+.icones-contact .titre {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #f39c12;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
 }
 
-/* Conteneur des icônes de contact en ligne */
-.contact-list {
-    display: flex; /* Flexbox */
-    justify-content: center; /* Centrer les éléments */
-    gap: 40px; /* Espacement entre icônes */
-    width: 100%; /* Largeur pleine */
+.liste-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* ✅ Permet de passer à la ligne sur mobile */
+    gap: 40px;
+    width: 100%;
 }
 
-/* Chaque élément de contact */
-.contact-item {
-    display: flex; /* Flexbox */
-    flex-direction: column; /* Icône au-dessus du texte */
-    align-items: center; /* Centre horizontalement */
-    gap: 8px; /* Espacement entre icône et texte */
+.element-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
-/* Style des icônes dans les liens */
-.contact-item a i {
-    font-size: 60px; /* Taille des icônes */
-    transition: transform 0.3s ease, color 0.3s ease; /* Transition pour hover */
-    color: white; /* Couleur blanche par défaut */
-    text-shadow: 0 0 5px #f39c12; /* Ombre orange autour */
+.element-contact .lien i {
+    font-size: 60px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: white;
+    text-shadow: 0 0 5px #f39c12;
 }
 
-/* Effet hover sur les icônes */
-.contact-item a:hover i {
-    transform: scale(1.2); /* Agrandissement */
-    color: #f39c12; /* Changement de couleur orange */
-    text-shadow: 0 0 10px #f39c12; /* Ombre plus forte */
+.element-contact .lien:hover i {
+    transform: scale(1.2);
+    color: #f39c12;
+    text-shadow: 0 0 10px #f39c12;
 }
 
-/* Couleur spécifique pour lien WhatsApp */
-.contact-item a[href*="wa.me"] i {
-    color: #25D366; /* Vert WhatsApp */
-    text-shadow: none; /* Pas d'ombre */
+.element-contact .lien[href*="wa.me"] i {
+    color: #25D366;
+    text-shadow: none;
 }
 
-/* Hover WhatsApp */
-.contact-item a[href*="wa.me"]:hover i {
-    color: #1ebe57; /* Vert foncé */
-    text-shadow: 0 0 8px #1ebe57; /* Ombre verte */
+.element-contact .lien[href*="wa.me"]:hover i {
+    color: #1ebe57;
+    text-shadow: 0 0 8px #1ebe57;
 }
 
-/* Couleur spécifique pour lien TikTok */
-.contact-item a[href*="tiktok.com"] i {
-    color: white; /* Blanc */
-    text-shadow: 0 0 5px #f39c12; /* Ombre orange */
+.element-contact .lien[href*="tiktok.com"] i {
+    color: white;
+    text-shadow: 0 0 5px #f39c12;
 }
 
-/* Hover TikTok */
-.contact-item a[href*="tiktok.com"]:hover i {
-    color: #f39c12; /* Orange */
-    text-shadow: 0 0 10px #f39c12; /* Ombre orange plus forte */
+.element-contact .lien[href*="tiktok.com"]:hover i {
+    color: #f39c12;
+    text-shadow: 0 0 10px #f39c12;
 }
 
-/* Couleur spécifique pour lien Téléphone */
-.contact-item a[href*="tel:"] i {
-    color: #1DA1F2; /* Bleu clair */
-    text-shadow: none; /* Pas d'ombre */
+.element-contact .lien[href*="tel:"] i {
+    color: #1DA1F2;
+    text-shadow: none;
 }
 
-/* Hover Téléphone */
-.contact-item a[href*="tel:"]:hover i {
-    color: #0d71d0; /* Bleu foncé */
-    text-shadow: 0 0 8px #0d71d0; /* Ombre bleue */
+.element-contact .lien[href*="tel:"]:hover i {
+    color: #0d71d0;
+    text-shadow: 0 0 8px #0d71d0;
 }
 
-/* Couleur spécifique pour lien Instagram */
-.contact-item a[href*="instagram.com"] i {
-    color: #E1306C; /* Rose Instagram */
-    text-shadow: none; /* Pas d'ombre */
+.element-contact .lien[href*="instagram.com"] i {
+    color: #E1306C;
+    text-shadow: none;
 }
 
-/* Hover Instagram */
-.contact-item a[href*="instagram.com"]:hover i {
-    color: #b2245c; /* Rose foncé */
-    text-shadow: 0 0 8px #b2245c; /* Ombre rose */
+.element-contact .lien[href*="instagram.com"]:hover i {
+    color: #b2245c;
+    text-shadow: 0 0 8px #b2245c;
 }
 
-/* Style du footer */
-footer {
-    text-align: center; /* Centrer le texte */
-    padding: 20px; /* Padding interne */
-    background-color: #111; /* Fond très foncé */
-    color: #888; /* Texte gris clair */
-    font-size: 14px; /* Taille du texte */
-    margin-top: 40px; /* Marge haute */
+/* ====================== */
+/* PIED DE PAGE */
+/* ====================== */
+
+.pied-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #888;
+    font-size: 14px;
+    margin-top: 40px;
 }
 
-/* Section compétences */
-.skills {
-    padding: 40px 20px; /* Padding haut/bas et côtés */
-    text-align: center; /* Centrer le contenu */
-    background-color: #000; /* Fond noir */
+/* ====================== */
+/* COMPÉTENCES */
+/* ====================== */
+
+.competences {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #000;
 }
 
-/* Titre de la section compétences */
-.skills h2 {
-    font-size: 28px; /* Taille du texte */
-    margin-bottom: 30px; /* Marge sous le titre */
-    color: #f39c12; /* Orange */
+.competences .titre {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #f39c12;
 }
 
-/* Liste des compétences avec flexbox */
-.skills-list {
-    display: flex; /* Flexbox */
-    flex-wrap: wrap; /* Passage à la ligne si besoin */
-    justify-content: center; /* Centrer les compétences */
-    gap: 40px; /* Espacement entre compétences */
+.liste-competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
-/* Chaque compétence */
-.skill {
-    display: flex; /* Flexbox */
-    flex-direction: column; /* Icône au-dessus du texte */
-    align-items: center; /* Centrer horizontalement */
-    animation: fadeIn 1.2s ease forwards; /* Animation d'apparition */
-    opacity: 0; /* Opacité initiale */
-    cursor: pointer; /* Curseur pointeur au survol */
-    max-width: 200px; /* Largeur maximale */
+.competence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: apparition 1.2s ease forwards;
+    opacity: 0;
+    cursor: pointer;
+    max-width: 200px;
+    padding: 10px;
 }
 
-/* Icône de compétence */
-.skill i {
-    font-size: 80px; /* Taille icône */
-    margin-bottom: 15px; /* Marge sous l'icône */
-    color: #f39c12; /* Orange */
-    transition: transform 0.3s, color 0.3s; /* Transitions au hover */
-    text-shadow: 0 0 10px rgba(243, 156, 18, 0.5); /* Ombre orange douce */
+.competence i {
+    font-size: 80px;
+    margin-bottom: 15px;
+    color: #f39c12;
+    transition: transform 0.3s, color 0.3s;
+    text-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
 }
 
-/* Effet hover sur l'icône */
-.skill:hover i {
-    transform: scale(1.2); /* Agrandissement */
-    color: #ffd659; /* Jaune clair */
+.competence:hover i {
+    transform: scale(1.2);
+    color: #ffd659;
 }
 
-/* Titre de la compétence */
-.skill p {
-    font-size: 16px; /* Taille texte */
-    color: #ddd; /* Gris clair */
-    margin: 0; /* Suppression des marges */
+.competence p {
+    font-size: 16px;
+    color: #ddd;
+    margin: 0;
 }
 
-/* Détails cachés des compétences */
-.skill-details {
-    max-width: 300px; /* Largeur maximale */
-    color: #ddd; /* Gris clair */
-    font-size: 14px; /* Taille plus petite */
-    margin-top: 10px; /* Marge au-dessus */
-    display: none; /* Caché par défaut */
+.details-competence {
+    max-width: 300px;
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
 }
 
-/* Affiche les détails quand la compétence est active */
-.skill.active .skill-details {
-    display: block; /* Affiche le contenu */
+.competence.actif .details-competence {
+    display: block;
 }
 
-/* Animation fadeIn */
-@keyframes fadeIn {
+/* ====================== */
+/* ANIMATION */
+/* ====================== */
+
+@keyframes apparition {
     to {
-        opacity: 1; /* Opacité finale */
-        transform: translateY(0); /* Position finale */
+        opacity: 1;
+        transform: translateY(0);
     }
     from {
-        opacity: 0; /* Opacité initiale */
-        transform: translateY(30px); /* Décalage initial vers le bas */
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+/* ====================== */
+/* RESPONSIVE - TABLETTES & MOBILES */
+/* ====================== */
+@media screen and (max-width: 768px) {
+    /* ✅ Ajustements pour tablettes */
+    .titre-principal {
+        font-size: 24px;
+    }
+
+    .paragraphe {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .liste-contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .element-contact .lien i {
+        font-size: 40px;
+    }
+
+    .liste-competences {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .competence i {
+        font-size: 60px;
+    }
+
+    .pied-page {
+        font-size: 12px;
+    }
+}
+
+/* ====================== */
+/* RESPONSIVE - PETITS TÉLÉPHONES */
+/* ====================== */
+@media screen and (max-width: 480px) {
+    /* ✅ Optimisation pour écrans très petits */
+    .titre-principal {
+        font-size: 20px;
+    }
+
+    .competence i {
+        font-size: 50px;
+    }
+
+    .paragraphe {
+        font-size: 15px;
+    }
+
+    .icones-contact .titre,
+    .competences .titre {
+        font-size: 22px;
+    }
+}
+
+/* ====================== */
+/* RESPONSIVE - GRANDS ÉCRANS */
+/* ====================== */
+@media screen and (min-width: 1200px) {
+    /* ✅ Meilleure lisibilité et mise en page pour grands écrans */
+    .competence {
+        max-width: 250px;
+    }
+
+    .competence i {
+        font-size: 90px;
+    }
+
+    .details-competence {
+        font-size: 16px;
+    }
+
+    .paragraphe {
+        font-size: 20px;
+    }
+
+    .pied-page {
+        font-size: 16px;
     }
 }
