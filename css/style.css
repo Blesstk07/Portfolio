@@ -1,10 +1,6 @@
 /* ====================== */
 /* STYLE GÉNÉRAL DE LA PAGE */
 /* ====================== */
-<<<<<<< HEAD
-=======
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 body {
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -16,19 +12,12 @@ body {
 /* ====================== */
 /* TITRE PRINCIPAL */
 /* ====================== */
-<<<<<<< HEAD
-=======
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .titre-principal {
     font-size: 32px;
     text-align: center;
     margin-top: 20px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .nom {
     color: #f39c12;
     text-transform: uppercase;
@@ -37,52 +26,31 @@ body {
 /* ====================== */
 /* PHOTO DE PROFIL */
 /* ====================== */
-<<<<<<< HEAD
-=======
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .photo-profil {
     display: block;
     margin: 20px auto;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
-<<<<<<< HEAD
     width: 200px;
     height: 200px;
-=======
-    width: 200px;    /* ✅ Taille restaurée comme avant */
-    height: 200px;   /* ✅ Taille restaurée comme avant */
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
     object-fit: cover;
 }
 
 /* ====================== */
 /* PARAGRAPHES */
 /* ====================== */
-<<<<<<< HEAD
-=======
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .paragraphe {
     font-size: 18px;
     text-align: center;
     margin: 10px auto;
     max-width: 700px;
     line-height: 1.6;
-<<<<<<< HEAD
     padding: 0 20px;
-=======
-    padding: 0 20px; /* ✅ Ajout de padding pour petit écran */
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 }
 
 /* ====================== */
 /* LIENS GÉNÉRAUX */
 /* ====================== */
-<<<<<<< HEAD
-=======
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .lien {
     color: inherit;
     text-decoration: none;
@@ -92,10 +60,6 @@ body {
 /* ====================== */
 /* CONTACT */
 /* ====================== */
-<<<<<<< HEAD
-=======
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .icones-contact {
     display: flex;
     flex-direction: column;
@@ -104,10 +68,7 @@ body {
     padding: 20px;
     max-width: 700px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .icones-contact .titre {
     font-size: 28px;
     margin-bottom: 30px;
@@ -118,7 +79,7 @@ body {
     width: 100%;
     text-align: center;
 }
-<<<<<<< HEAD
+
 .liste-contact {
     display: flex;
     justify-content: center;
@@ -126,102 +87,62 @@ body {
     gap: 40px;
     width: 100%;
 }
-=======
 
-.liste-contact {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* ✅ Permet de passer à la ligne sur mobile */
-    gap: 40px;
-    width: 100%;
-}
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien i {
     font-size: 60px;
     transition: transform 0.3s ease, color 0.3s ease;
     color: white;
     text-shadow: 0 0 5px #f39c12;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien:hover i {
     transform: scale(1.2);
     color: #f39c12;
     text-shadow: 0 0 10px #f39c12;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien[href*="wa.me"] i {
     color: #25D366;
     text-shadow: none;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien[href*="wa.me"]:hover i {
     color: #1ebe57;
     text-shadow: 0 0 8px #1ebe57;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien[href*="tiktok.com"] i {
     color: white;
     text-shadow: 0 0 5px #f39c12;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien[href*="tiktok.com"]:hover i {
     color: #f39c12;
     text-shadow: 0 0 10px #f39c12;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien[href*="tel:"] i {
     color: #1DA1F2;
     text-shadow: none;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien[href*="tel:"]:hover i {
     color: #0d71d0;
     text-shadow: 0 0 8px #0d71d0;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien[href*="instagram.com"] i {
     color: #E1306C;
     text-shadow: none;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .element-contact .lien[href*="instagram.com"]:hover i {
     color: #b2245c;
     text-shadow: 0 0 8px #b2245c;
@@ -230,10 +151,6 @@ body {
 /* ====================== */
 /* PIED DE PAGE */
 /* ====================== */
-<<<<<<< HEAD
-=======
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .pied-page {
     text-align: center;
     padding: 20px;
@@ -246,38 +163,25 @@ body {
 /* ====================== */
 /* COMPÉTENCES */
 /* ====================== */
-<<<<<<< HEAD
-=======
-
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .competences {
     padding: 40px 20px;
     text-align: center;
     background-color: #000;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .competences .titre {
     font-size: 28px;
     margin-bottom: 30px;
     color: #f39c12;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .liste-competences {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .competence {
     display: flex;
     flex-direction: column;
@@ -288,10 +192,7 @@ body {
     max-width: 200px;
     padding: 10px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .competence i {
     font-size: 80px;
     margin-bottom: 15px;
@@ -299,27 +200,18 @@ body {
     transition: transform 0.3s, color 0.3s;
     text-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .competence:hover i {
     transform: scale(1.2);
     color: #ffd659;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .competence p {
     font-size: 16px;
     color: #ddd;
     margin: 0;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .details-competence {
     max-width: 300px;
     color: #ddd;
@@ -327,10 +219,7 @@ body {
     margin-top: 10px;
     display: none;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
 .competence.actif .details-competence {
     display: block;
 }
@@ -338,34 +227,14 @@ body {
 /* ====================== */
 /* ANIMATION */
 /* ====================== */
-<<<<<<< HEAD
 @keyframes apparition {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
-=======
-
-@keyframes apparition {
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-<<<<<<< HEAD
-}
-
-/* ====================== */
-/* RESPONSIVE */
-/* ====================== */
-@media screen and (max-width: 768px) {
-    .titre-principal {
-        font-size: 24px;
-    }
-=======
-    from {
-        opacity: 0;
-        transform: translateY(30px);
     }
 }
 
@@ -373,73 +242,43 @@ body {
 /* RESPONSIVE - TABLETTES & MOBILES */
 /* ====================== */
 @media screen and (max-width: 768px) {
-    /* ✅ Ajustements pour tablettes */
     .titre-principal {
         font-size: 24px;
     }
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
     .paragraphe {
         font-size: 16px;
         padding: 0 10px;
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
     .liste-contact {
         flex-direction: column;
         gap: 20px;
     }
-<<<<<<< HEAD
-    .element-contact .lien i {
-        font-size: 40px;
-    }
-=======
 
     .element-contact .lien i {
         font-size: 40px;
     }
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
     .liste-competences {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-<<<<<<< HEAD
-    .competence i {
-        font-size: 60px;
-    }
-=======
 
     .competence i {
         font-size: 60px;
     }
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
     .pied-page {
         font-size: 12px;
     }
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 480px) {
-    .titre-principal {
-        font-size: 20px;
-    }
-    .competence i {
-        font-size: 50px;
-    }
-    .paragraphe {
-        font-size: 15px;
-    }
-=======
 /* ====================== */
 /* RESPONSIVE - PETITS TÉLÉPHONES */
 /* ====================== */
 @media screen and (max-width: 480px) {
-    /* ✅ Optimisation pour écrans très petits */
     .titre-principal {
         font-size: 20px;
     }
@@ -452,33 +291,16 @@ body {
         font-size: 15px;
     }
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
     .icones-contact .titre,
     .competences .titre {
         font-size: 22px;
     }
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 1200px) {
-    .competence {
-        max-width: 250px;
-    }
-    .competence i {
-        font-size: 90px;
-    }
-    .details-competence {
-        font-size: 16px;
-    }
-    .paragraphe {
-        font-size: 20px;
-    }
-=======
 /* ====================== */
 /* RESPONSIVE - GRANDS ÉCRANS */
 /* ====================== */
 @media screen and (min-width: 1200px) {
-    /* ✅ Meilleure lisibilité et mise en page pour grands écrans */
     .competence {
         max-width: 250px;
     }
@@ -495,12 +317,10 @@ body {
         font-size: 20px;
     }
 
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
     .pied-page {
         font-size: 16px;
     }
 }
-<<<<<<< HEAD
 
 /* ====================== */
 /* MENU BURGER */
@@ -522,12 +342,14 @@ nav#nav-menu {
     justify-content: center;
     align-items: center;
 }
+
 nav#nav-menu a {
     color: white;
     font-weight: 600;
     text-decoration: none;
     font-size: 18px;
 }
+
 nav#nav-menu.open {
     display: flex;
     flex-direction: column;
@@ -538,6 +360,7 @@ nav#nav-menu.open {
     .menu-toggle {
         display: block;
     }
+
     nav#nav-menu {
         display: none;
         flex-direction: column;
@@ -547,17 +370,17 @@ nav#nav-menu.open {
         right: 20px;
         padding: 15px 25px;
         border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
         z-index: 9999;
     }
+
     nav#nav-menu.open {
         display: flex;
         flex-direction: column;
     }
+
     nav#nav-menu a {
         padding: 10px 0;
         font-size: 20px;
     }
 }
-=======
->>>>>>> 5245c8ef4df21893f2f7ad40526b2bfec46149cc
