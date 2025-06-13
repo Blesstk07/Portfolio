@@ -207,7 +207,7 @@ body {
 }
 
 .titre-competence {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: bold;
     color: #fff;
     margin-bottom: 10px;
@@ -327,67 +327,5 @@ body {
 
     .pied-page {
         font-size: 16px;
-    }
-}
-
-/* ====================== */
-/* MENU BURGER */
-/* ====================== */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 36px;
-    color: white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    user-select: none;
-}
-
-nav#nav-menu {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
-nav#nav-menu a {
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav#nav-menu.open {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Responsive menu burger */
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    nav#nav-menu {
-        display: none;
-        flex-direction: column;
-        background-color: #111;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        padding: 15px 25px;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-        z-index: 9999;
-    }
-
-    nav#nav-menu.open {
-        display: flex;
-    }
-
-    nav#nav-menu a {
-        padding: 10px 0;
-        font-size: 20px;
     }
 }
