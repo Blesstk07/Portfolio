@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* ====================== */
 /* TITRE PRINCIPAL */
 /* ====================== */
@@ -205,6 +206,14 @@ body {
     color: #ffd659;
 }
 
+.titre-competence {
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .competence p {
     font-size: 16px;
     color: #ddd;
@@ -375,7 +384,6 @@ nav#nav-menu.open {
 
     nav#nav-menu.open {
         display: flex;
-        flex-direction: column;
     }
 
     nav#nav-menu a {
